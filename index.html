@@ -72,6 +72,13 @@
   .card.rose h3,.card.rose p{color:var(--butter);}
   .card.rose .n{color:var(--blush);}
 
+  /* ---- what you can do ---- */
+  .does{padding:20px 0 40px;}
+  .does .head{text-align:center;max-width:30ch;margin:0 auto 44px;}
+  .doeslist{list-style:none;padding:0;margin:0 auto;max-width:900px;display:grid;grid-template-columns:1fr 1fr;gap:20px 46px;}
+  .doeslist li{position:relative;padding-left:40px;font-size:18px;line-height:1.4;color:var(--ink);}
+  .doeslist li::before{content:"";position:absolute;left:8px;top:3px;width:10px;height:18px;border:solid var(--rose);border-width:0 3px 3px 0;transform:rotate(45deg);}
+
   /* ---- showcase strip ---- */
   .showcase{padding:70px 0 40px;}
   .shots{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;}
@@ -90,6 +97,7 @@
     .hero-grid{grid-template-columns:1fr;gap:10px;}
     .phone-stage{order:-1;margin-bottom:18px;}
     .cards{grid-template-columns:1fr;}
+    .doeslist{grid-template-columns:1fr;}
     .hero .script.big{font-size:24vw;}
   }
   @media (prefers-reduced-motion:no-preference){
@@ -272,6 +280,26 @@
           <p>Snap photos to fill out your closet, sort it into tops, bottoms, and the rest, and keep track of what you actually reach for.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="does">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Everything in one place</span>
+        <h2>What you can do with Reve.</h2>
+      </div>
+      <ul class="doeslist">
+        <li>Build your closet by photographing your own clothes</li>
+        <li>Organize everything by tops, bottoms, jackets, accessories, and shoes</li>
+        <li>Create outfit moodboards on a colored canvas</li>
+        <li>See how well a look comes together before you wear it</li>
+        <li>Save your favorite outfits</li>
+        <li>Share looks with all your friends or just a few</li>
+        <li>React with a heart or a thumbs down</li>
+        <li>Vote between two looks with this or that</li>
+        <li>Keep track of what you actually wear</li>
+      </ul>
     </div>
   </section>
 
